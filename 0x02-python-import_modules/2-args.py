@@ -6,7 +6,7 @@ if len(sys.argv) == 1:
 else:
     if len(sys.argv)-1 == 1:
         print("{} argument:".format(len(sys.argv)-1))
-        print("1:", sys.argv[0])
+        print("1:", sys.argv[1])
     else:
         print("{} arguments:".format(len(sys.argv)-1))
         for i, x in enumerate(sys.argv):
