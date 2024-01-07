@@ -3,11 +3,9 @@
 
 def uppercase(str):
     for i in range(0, len(str)):
-        if (ord(str[i]) >= 97 and ord(str[i]) <= 123):
-            print("{:c}".format(ord(str[i])-32), end='')
-            if (i == len(str)-1):
-                print("")
+        if (ord(str[i]) >= 97 and ord(str[i]) <= 122):
+            charunicode = ord(str[i])-32
         else:
-            print("{:c}".format(ord(str[i])), end='')
-            if (i == len(str)-1):
-                print("")
+            charunicode = ord(str[i])
+        print("{:c}".format(charunicode), end='')
+    print("")
